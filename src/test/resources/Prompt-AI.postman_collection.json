@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "b82bdee9-0685-477b-9479-f78af65fb544",
+		"name": "Prompt-AI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20457128"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/prompt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"prompt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Direct Response",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/prompt/directresponse?prompt=hi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"prompt",
+						"directresponse"
+					],
+					"query": [
+						{
+							"key": "prompt",
+							"value": "hi"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Prompt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/prompt/save?prompt=Hi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"prompt",
+						"save"
+					],
+					"query": [
+						{
+							"key": "prompt",
+							"value": "Hi"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/prompt/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"prompt",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
